@@ -9,8 +9,15 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // your code here
+    var imsor = document.getElementById("source").getAttribute("data-image");
+    var image = document.createElement("img");
+    image.setAttribute("src", imsor);
+    var tar = document.getElementById("target");
+    tar.appendChild(image);
+    document.getElementById("source").removeAttribute("data-image");
 
-})();
+
+}());

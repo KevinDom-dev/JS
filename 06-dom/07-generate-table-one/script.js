@@ -12,5 +12,27 @@
 (function() {
 
     // your code here
+    var divTa = document.getElementById("target");
+
+    var table = document.createElement('Table');
+    table.border='1';
+    table.style.border="bold";
+
+    var tableBody = document.createElement('Tbody');
+    table.appendChild(tableBody);
+
+    for (var i=0; i<10; i++){
+        var tr = document.createElement('TR');
+        tableBody.appendChild(tr);
+
+        for (var j=0; j<1; j++){
+            var td = document.createElement('TD');
+            td.width='75';
+            td.appendChild(document.createTextNode("Cell " + i + "," + j));
+            tr.appendChild(td);
+        }
+    }
+    divTa.appendChild(table);
+
 
 })();

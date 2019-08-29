@@ -27,5 +27,8 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function (){
+        let basket = fruits.includes("apple");console.log(basket)
 
+    });
 })();

@@ -12,5 +12,10 @@
 (function() {
 
     // your code here
-
+    var select = document.querySelectorAll(".target")
+    var i;
+    for (i = 0; i < select.length; i++) {
+        select[i].innerHTML = "owned";
+    }
 })();
+//".content>.material>.target"

@@ -91,6 +91,8 @@
 
     // your code here
     document.getElementById("run").addEventListener("click", function (){
-        people.findIndex(name => firstname=="Jean" + {;console.log([name])});
+       let runname = people.findIndex(name => name.firstname=="Jean",lname => lname.lastname=="Dupont");
+       console.log(people[runname].email + " " + runname);
+
     });
 })();
