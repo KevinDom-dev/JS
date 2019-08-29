@@ -12,5 +12,20 @@
 (function() {
 
     // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        pass1 = document.getElementById("pass-one").value;
 
+        pass2 = document.getElementById("pass-two").value;
+        console.log(pass1 !== pass2);
+
+        if (pass1 !== pass2) {
+
+            document.getElementsByTagName("input")[0].style.border = "1px solid red";
+            document.getElementsByTagName("input")[1].style.border = "1px solid red";
+            console.log("Computer says no.")
+        } else {
+            console.log("Succes!")
+        }
+
+    });
 })();
