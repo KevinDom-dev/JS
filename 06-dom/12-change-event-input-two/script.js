@@ -12,12 +12,17 @@
 (function() {
 
     // your code here
-    document.getElementById("pass-one").setAttribute("maxlength","10");
-    let i = 0;
-    document.getElementById("pass-one").addEventListener("input", function () {
-        i = document.getElementById("pass-one").value.length;
-        document.getElementById("counter").innerHTML = i + "/10";
-    });
+    document.getElementById("pass-one").setAttribute("minlength","8");
+    document.getElementById("pass-one").addEventListener("input", function (e) {
+        var text = document.getElementById("pass-one").value;
+        var conf = document.getElementById("validity");
+        var re = new RegExp(/(\D*\d){2}/);
+        //console.log(re.test(text));
+        if (re.test(text) === true) {
+            conf.innerHTML="Ok"
+        }
+
+   });
 
 
 })();

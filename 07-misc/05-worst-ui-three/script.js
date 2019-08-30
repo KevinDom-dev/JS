@@ -12,5 +12,6 @@
 (function() {
 
     // your code here
+    document.getElementsByTagName('button')).forEach
 
 })();

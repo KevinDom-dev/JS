@@ -15,7 +15,7 @@
     var pic = document.getElementsByTagName("img");
 
     var wink = pic[0].getAttribute("data-hover");
-    var pic = pic[0].getAttribute("src");
+    var kiss = pic[0].getAttribute("src");
 
     pic[0].onmouseover = function () {
         pic[0].src = kiss;
