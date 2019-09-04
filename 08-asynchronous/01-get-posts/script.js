@@ -10,5 +10,21 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+// your code here
+
+    /*
+    function myCallback(error, articles) {
+        console.log(articles);
+    }
+     */
+
+    document.getElementById("run").addEventListener("click", function (){
+        window.lib.getPosts(function (error, articles) {
+            // myCallback(error, articles);
+
+            console.log(articles);
+
+        });
+
+    });
 })();
