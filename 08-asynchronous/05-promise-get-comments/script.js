@@ -11,4 +11,20 @@
 
 (() => {
     // your code here
+    let posts, comment;
+    document.getElementById("run").addEventListener("click", function(){
+        window.lib.getPosts(function(articles){
+            articles.forEach(function(post) { //Issues?
+            .then(function (getComm) {
+                    window.lib.getComments();
+                    comment = getComm[post.id];
+                    if (comment !== undefined) {
+                        post.comment = comment;
+
+                    }
+                    console.log(post)
+                })
+            });
+        })
+    })
 })();
